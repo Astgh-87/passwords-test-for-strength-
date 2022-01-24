@@ -1,0 +1,74 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+ <meta charset="UTF-8"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Shop </title> 
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>     
+  <body>
+<header>
+
+<div class= "top-menu"> 
+ <nav> 
+      <ul class="navbar">
+      <li><a class="a1" href="index.php">Home</a></li>
+
+    <li class="open dropdown-li"><a class="a1 nav-link" href="products_1.php">Blog
+    <button class="dropbtn"> 
+      <i class="fa fa-caret-down"></i>
+    </button>
+ <ul class="dropdown-menu">
+
+     <li><a href="products_1.php" class="a1 nav-link">Fruits</a></li>
+    <li><a href="products_2.php" class="a1 nav-link">Dried fruits</a></li>
+    <li><a href="products_3.php" class="a1 nav-link">Vegetables</a></li>
+    <li><a href="products_4.php" class="a1 nav-link">Nuts</a></li>
+ </ul> </a></li>
+
+     <li><a class="a1" href="registr.php">Registration</a></li>
+     <li><a class="a1" href="login.php">Log in</a></li>
+<li><a  href=>    
+
+<form action="file.php" method="post">
+
+<select name="lang" id="sel"> 
+ <option value="arm">Arm</option> 
+ <option value="eng">Eng</option> 
+ <option value="ru">Ru</option> 
+</select> 
+ </form>
+</a></li>
+ </ul>
+  </nav>
+</div>
+
+</header>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="usrname">Имя пользователя</label>
+    <input type="text" id="usrname" name="usrname" required>
+
+    <label for="psw">Пароль</label>
+  <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Должно содержать по крайней мере одно число, одну заглавную и строчную буквы, а также не менее 8 и более символов" required>
+
+    <input type="submit" value="Отправить">
+  </form>
+</div>
+
+<div id="message">
+  <h3>Пароль должен содержать следующее:</h3>
+  <p id="letter" class="invalid">нижний регистр буква</p>
+  <p id="capital" class="invalid">заглавная (прописная) буква</p>
+  <p id="number" class="invalid">число</p>
+  <p id="length" class="invalid">Минимум 8 символов </p>
+</div>
+
+
+<script type="text/javascript" src="jquery-3.3.1.js"></script> 
+ <script type="text/javascript" src="script.js"></script> 
+
+</body>
+</html>
